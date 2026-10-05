@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pack & Go is a personalized travel packing planner.">
+    <title>Pack & Go - Travel Packing Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pack & Go</h1>
+        <p>Your personalized travel packing planner</p>
+    </header>
+
+    <main>
+        <section class="trip-setup">
+            <h2>Plan Your Trip</h2>
+            <p>Tell us about your trip and we'll help you create your packing list.</p>
+
+            <form id="trip-form">
+
+                <div class="form-group">
+                    <label for="destination">Destination</label>
+                    <input
+                        type="text"
+                        id="destination"
+                        name="destination"
+                        placeholder="e.g. Tokyo, Japan"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Start Date</label>
+                    <input
+                        type="date"
+                        id="start-date"
+                        name="start-date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="end-date">End Date</label>
+                    <input
+                        type="date"
+                        id="end-date"
+                        name="end-date"
+                        required
+                    >
+                </div>
+
+                <fieldset>
+                    <legend>What activities will you do?</legend>
+
+                    <label>
+                        <input type="checkbox" name="activities" value="sightseeing">
+                        Sightseeing
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activities" value="hiking">
+                        Hiking
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activities" value="swimming">
+                        Swimming
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activities" value="beach">
+                        Beach
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activities" value="business">
+                        Business
+                    </label>
+
+                </fieldset>
+
+                <button type="submit">Create My Packing List</button>
+
+            </form>
+
+            <div id="country-info" class="country-info"></div>
+            <div id="weather-info" class="weather-info"></div>
+            <div id="packing-list" class="packing-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pack & Go</p>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

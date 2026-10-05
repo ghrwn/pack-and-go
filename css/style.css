@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #f59e0b;
+    --background-color: #f8fafc;
+    --card-color: #ffffff;
+    --text-color: #1f2937;
+    --border-color: #d1d5db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.trip-setup {
+    background-color: var(--card-color);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.trip-setup h2 {
+    margin-bottom: 0.5rem;
+}
+
+.trip-setup > p {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label,
+legend {
+    font-weight: 600;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: none;
+    margin: 1.5rem 0;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.6rem 0;
+    font-weight: 400;
+}
+
+fieldset input {
+    margin-right: 0.5rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.85rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.country-info,
+.weather-info,
+.packing-list {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.country-info h3,
+.weather-info h3,
+.packing-list h3 {
+    margin-bottom: 0.75rem;
+}
+
+.weather-info h4,
+.packing-list h4 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.country-info p,
+.weather-info p {
+    margin-bottom: 0.4rem;
+}
+
+.forecast-day {
+    padding: 1rem;
+    margin-top: 0.75rem;
+    background-color: var(--card-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.packing-category {
+    margin-top: 1rem;
+}
+
+.packing-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.packing-item {
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.packing-item:last-child {
+    border-bottom: none;
+}
+
+.packing-item label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.packing-checkbox {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+}
+
+.packing-item.packed span {
+    text-decoration: line-through;
+    opacity: 0.55;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .trip-setup {
+        padding: 1.5rem;
+    }
+}
